@@ -7,5 +7,9 @@
         public DateTime To { get; set; }
         public float Value { get; set; }
 
+        public override string ToString()
+        {
+            return $"{MeterId};{From};{To};{Value}";
+        }
     }
 }
